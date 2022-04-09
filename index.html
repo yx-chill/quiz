@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="loading.css">
+  <script defer src="script.js"></script>
+  <title>Quiz App</title>
+</head>
+<body>
+  <header class="header">
+    <h1>Quiz App</h1>
+    <span id="typed"></span>
+  </header>
+  <div class="container">
+    <div class="year">
+      <button type="button" class="btn year_btn" data-year="110">110年度</button>
+      <button type="button" class="btn year_btn" data-year="109">109年度</button>
+      <button type="button" class="btn year_btn" data-year="108">108年度</button>
+      <button type="button" class="btn year_btn" data-year="107">107年度</button>
+    </div>
+    <div class="type hide">
+      <button type="button" class="btn type_btn" data-subject-id="1">國文</button>
+      <button type="button" class="btn type_btn" data-subject-id="2">英文</button>
+      <button type="button" class="btn type_btn" data-subject-id="3">法規</button>
+    </div>
+    <div class="question_container hide">
+      <h2 class="subject"></h2>
+      <div class="questions"></div>
+      <button type="button" class="submit">交卷</button>
+    </div>
+    <div class="solution_container hide">
+      <div class="score_container">
+        <h2 class="score"></h2>
+      </div>
+      <div class="solutions"></div>
+      <button type="button" class="again">再考一次</button>
+    </div>
+  </div>
+  <div class="loading hide">
+    <div class="la-ball-zig-zag-deflect">
+      <div class="ball1"></div>
+      <div class="ball2"></div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+</body>
+</html>
